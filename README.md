@@ -1,17 +1,18 @@
-# Vivado DAC/LVDS Demo
+# DAC/LVDS FPGA Interface
 
-This repository contains a Vivado FPGA demo around DAC/LVDS clocking and data-output concepts.
+This repository contains a small FPGA interface prototype for DAC/LVDS signal generation. I worked on clocking, pulse generation, LVDS-style data output, and simulation checks in Verilog.
 
-## What Is Included
+The project has 4 Verilog source files and several schematic/simulation figures. I used the design mainly to test timing behavior and compare different clocking ideas.
 
-- HDL source files in `src/`
-- Schematic and simulation images in `figures/`
-- Original short technical README as `original_readme.txt`
+## What I Did
 
-## What Is Excluded
+- Designed basic Verilog modules for pulse generation and top-level integration.
+- Tested an externally supplied LVDS clock idea.
+- Tested an internally generated high-speed clock approach.
+- Added simulation and schematic figures to show the signal flow.
 
-Datasheets, evaluation-board user guides, Vivado manuals, company-specific context, generated build outputs, and proprietary/internal files are excluded.
+## Repository Structure
 
-## Technical Overview
-
-The design includes variants for externally supplied LVDS clocking and internally generated FPGA clocking.
+```text
+src/        Verilog source files
+figures/    Schematic and simulation images
