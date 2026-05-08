@@ -18,5 +18,6 @@ src/        Verilog source files
 figures/    Schematic and simulation images
 ```
 
-Notes
+## Notes
+
 This is a prototype-level FPGA project. It is mainly useful for understanding the interface logic and simulation results, not as a complete production DAC driver.
